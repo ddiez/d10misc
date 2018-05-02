@@ -15,7 +15,10 @@ to_tidy <- function(x, ...) {
 #' @rdname to_tidy
 #' @export
 to_tidy.matrix <- function(x, row.name = "row", ...) {
-  x <- as_tibble(x) %>% rownames_to_column(var = row.name)
+  if (is.null(rownames(x)))
+    x <- as_tibble(x) %>% rownames_to_column(var = row.name)
+  else
+    x <- as_tibble(x, rownames = row.name)
   to_tidy(x, row.name = row.name, ...)
 }
 
