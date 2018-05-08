@@ -19,6 +19,8 @@ to_tidy(x, ...)
 \arguments{
 \item{x}{a matrix, data.frame or tibble object.}
 
+\item{...}{arguments passed to methods.}
+
 \item{row.name}{name for row data.}
 
 \item{col.name}{name for column data.}

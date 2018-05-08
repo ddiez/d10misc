@@ -7,6 +7,7 @@
 #' @param col.name name for column data.
 #' @param value.name name use for value column.
 #' @param stringsAsFactors logical; whether to convert col/row names to factors (preserving original ordering).
+#' @param ... arguments passed to methods.
 #' @export
 to_tidy <- function(x, ...) {
   UseMethod("to_tidy")
