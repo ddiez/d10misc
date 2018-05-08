@@ -4,6 +4,10 @@ Title: Miscellaneous tools
 Version: 0.1.0
 Authors@R: person("Diego", "Diez", email = "diego10ruiz@gmail.com", role = c("aut", "cre"))
 Description: Miscellaneous tools.
+Imports: 
+  tibble,
+  dplyr,
+  tidyr
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
