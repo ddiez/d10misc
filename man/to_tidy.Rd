@@ -14,7 +14,7 @@ to_tidy(x, ...)
 \method{to_tidy}{data.frame}(x, row.name = "row", ...)
 
 \method{to_tidy}{tbl_df}(x, row.name = "row", col.name = "col",
-  value.name = "value", stringsAsFactors = FALSE)
+  value.name = "value", stringsAsFactors = FALSE, ...)
 }
 \arguments{
 \item{x}{a matrix, data.frame or tibble object.}

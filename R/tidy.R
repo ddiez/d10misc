@@ -33,10 +33,10 @@ to_tidy.data.frame <- function(x, row.name = "row", ...) {
 
 #' @rdname to_tidy
 #' @export
-to_tidy.tbl_df <- function(x, row.name = "row", col.name = "col", value.name = "value", stringsAsFactors = FALSE) {
   rn <- x[[row.name]]
   cn <- colnames(x)[-1]
-  y <- x %>% gather(!!col.name, !!value.name, -!!row.name)
+to_tidy.tbl_df <- function(x, row.name = "row", col.name = "col", value.name = "value", stringsAsFactors = FALSE, ...) {
+  y <- x %>% gather(!!col.name, !!value.name, -!!row.name, ...)
 
   if (stringsAsFactors) {
     y <- y %>%
