@@ -4,4 +4,7 @@
 #' @docType package
 #'
 #' @import tibble dplyr tidyr
+#' @importFrom ggthemes theme_base
+#' @importFrom ggplot2 theme element_rect
+#' @importFrom rlang := !!
 NULL
