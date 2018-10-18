@@ -4,12 +4,12 @@
 \alias{theme_base}
 \title{theme_base}
 \usage{
-theme_base(base_size = 12, base_family = "")
+theme_base(base_size = 12, ...)
 }
 \arguments{
 \item{base_size}{base size for text.}
 
-\item{base_family}{base family for text.}
+\item{...}{arguments passed down to theme_dark().}
 }
 \description{
 A tweaked ggthemes::theme_base().
