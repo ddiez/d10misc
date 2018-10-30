@@ -1,7 +1,7 @@
 Package: d10misc
 Type: Package
 Title: Miscellaneous tools
-Version: 0.1.5
+Version: 0.1.6
 Authors@R: person("Diego", "Diez", email = "diego10ruiz@gmail.com", role = c("aut", "cre"))
 Description: Miscellaneous tools.
 Imports: 
