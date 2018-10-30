@@ -58,3 +58,15 @@ remove_ticks <- function(type = c("x", "y")) {
   names(y) <- x
   do.call(theme, y)
 }
+
+#' remove_axis_text
+#'
+#' @param type the axes to remove the text from.
+#'
+#' @export
+remove_axis_text <- function(type = c("x", "y")) {
+  x <- paste0("axis.text.", type)
+  y <- replicate(length(x), element_blank())
+  names(y) <- x
+  do.call(theme, y)
+}
