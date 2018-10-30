@@ -18,12 +18,12 @@ plot_heatmap <- function(x, ...) {
 #' @export
 plot_heatmap.matrix <- function(x, row.cluster = TRUE, col.cluster = FALSE, scale = TRUE, row.name = "row", col.name = "col", value.name = "value", ...) {
   if (row.cluster) {
-    h <- hclust(as.dist(1 - cor(t(x))))
-    x <- x[h$order,]
+    h <- hclust(dist(x))
+    x <- x[h$order, ]
   }
 
   if (col.cluster) {
-    h <- hclust(as.dist(1 - cor(x)))
+    h <- hclust(dist(t(x)))
     x <- x[, h$order]
   }
 
