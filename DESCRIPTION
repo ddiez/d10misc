@@ -10,7 +10,8 @@ Imports:
   tidyr,
   ggplot2,
   ggthemes,
-  rlang
+  rlang,
+  stats
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
