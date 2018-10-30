@@ -47,12 +47,12 @@ rotate_xlab <- function(angle = 90, hjust = 1, vjust = .5, ...) {
   )
 }
 
-#' remove_ticks
+#' remove_axis_ticks
 #'
 #' @param type the axes to remove the ticks from.
 #'
 #' @export
-remove_ticks <- function(type = c("x", "y")) {
+remove_axis_ticks <- function(type = c("x", "y")) {
   x <- paste0("axis.ticks.", type)
   y <- replicate(length(x), element_blank())
   names(y) <- x
