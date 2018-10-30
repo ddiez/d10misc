@@ -3,6 +3,8 @@
 S3method(to_tidy,data.frame)
 S3method(to_tidy,matrix)
 S3method(to_tidy,tbl_df)
+export(remove_ticks)
+export(rotate_xlab)
 export(theme_base)
 export(theme_kuro)
 export(to_tidy)
