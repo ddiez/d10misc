@@ -3,8 +3,7 @@
 #' @name d10misc
 #' @docType package
 #'
-#' @import tibble dplyr tidyr
+#' @import tibble dplyr tidyr ggplot2
 #' @importFrom ggthemes theme_base
-#' @importFrom ggplot2 theme element_rect element_text
 #' @importFrom rlang := !!
 NULL
