@@ -6,5 +6,5 @@
 #' @import tibble dplyr tidyr ggplot2
 #' @importFrom ggthemes theme_base
 #' @importFrom rlang := !!
-#' @importFrom stats as.dist cor hclust
+#' @importFrom stats as.dist dist hclust
 NULL
