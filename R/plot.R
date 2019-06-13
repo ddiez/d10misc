@@ -28,7 +28,7 @@ plot_heatmap.matrix <- function(x, row.cluster = TRUE, col.cluster = FALSE, scal
   }
 
   if (scale)
-    x <- scale(x)
+    x <- t(scale(t(x)))
 
   d <- x %>% as.data.frame() %>%
     rownames_to_column(row.name) %>%
