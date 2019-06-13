@@ -1,7 +1,7 @@
 Package: d10misc
 Type: Package
 Title: Miscellaneous tools
-Version: 0.1.6
+Version: 0.1.7
 Authors@R: person("Diego", "Diez", email = "diego10ruiz@gmail.com", role = c("aut", "cre"))
 Description: Miscellaneous tools.
 Imports: 
@@ -15,4 +15,4 @@ Imports:
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
