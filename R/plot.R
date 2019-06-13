@@ -38,5 +38,7 @@ plot_heatmap.matrix <- function(x, row.cluster = TRUE, col.cluster = FALSE, scal
   d[[col.name]] <- factor(d[[col.name]], levels = colnames(x))
 
   ggplot(d, aes_string(x = col.name, y = row.name, fill = value.name)) +
-    geom_tile()
+    geom_tile() +
+    scale_x_discrete(expand = c(0, 0)) +
+    scale_y_discrete(expand = c(0, 0))
 }
