@@ -7,9 +7,16 @@
 \usage{
 plot_heatmap(x, ...)
 
-\method{plot_heatmap}{matrix}(x, row.cluster = TRUE,
-  col.cluster = FALSE, scale = TRUE, row.name = "row",
-  col.name = "col", value.name = "value", ...)
+\method{plot_heatmap}{matrix}(
+  x,
+  row.cluster = TRUE,
+  col.cluster = FALSE,
+  scale = TRUE,
+  row.name = "row",
+  col.name = "col",
+  value.name = "value",
+  ...
+)
 }
 \arguments{
 \item{x}{object to plot.}
